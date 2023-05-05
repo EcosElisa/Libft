@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esobrinh <esobrinh@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: esobrinh <esobrinh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 01:25:45 by esobrinh          #+#    #+#             */
-/*   Updated: 2022/10/14 01:25:48 by esobrinh         ###   ########.fr       */
+/*   Updated: 2023/05/04 16:24:59 by esobrinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ int		ft_isalnum(int arg);
 int		ft_isalpha(int argument);
 int		ft_isascii(int arg);
 int		ft_isdigit(int arg);
+int		ft_ishexdigit(int c);
 int		ft_isprint(int arg);
+int		ft_isspace(int c);
 void	*ft_memchr(void *buffer, int ch, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
@@ -40,6 +42,7 @@ char	*ft_strdup(const char *s);
 size_t	ft_strlcat(char *dst, const char *src, size_t destsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
+int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *str1, const char *str2, size_t count);
 char	*ft_strnstr(const char *s, const char *sfind, size_t slen);
 char	*ft_strrchr(const char *str, int c);
